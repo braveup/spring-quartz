@@ -1,13 +1,15 @@
 package com.sl.job.scheduler;
 
-import com.sl.job.MyJob;
-import com.sl.job.MyJobTwo;
+import com.sl.job.jobs.MyJob;
+import com.sl.job.jobs.MyJobTwo;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 
 import java.util.Date;
 
 /**
+ * 实现用1.8.2jar
+ *
  * Created by braveup on 2017/3/22.
  */
 public class MyScheduler {
@@ -43,6 +45,5 @@ public class MyScheduler {
         } catch (SchedulerException e) {
             e.printStackTrace();
         }
-
     }
 }
